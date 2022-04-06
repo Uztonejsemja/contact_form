@@ -13,28 +13,28 @@
         <h1>CONTACT FORM</h1>
         <div>
             <label for="name">Your Name</label>
-            <input type="text" id="first" placeholder="First Name">
-            <input type="text" id="last" placeholder="Last Name">
+            <input type="text" id="first" placeholder="First Name" required>
+            <input type="text" id="last" placeholder="Last Name" required>
         </div>
 
         <div class="input-container">
             <label for="address">Address</label>
-            <input type="address" id="address" placeholder="Street, city, postcode, ...">
+            <input type="address" id="address" placeholder="Street, city, postcode, ..." required>
         </div>
 
         <div class="input-container">
             <label for="Phone">Phone</label>
-            <input type="phone" id="phone" placeholder="### ### ### ###">
+            <input type="tel" id="phone" placeholder="### ### ###" required require title="Nine numbers required." pattern="^\d{9}[0-9]$">
         </div>
 
         <div class="input-container">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="your@email.net">
+            <input type="email" id="email" placeholder="your@email.net" required pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
         </div>
 
         <div class="input-container-textarea">
             <label for="message">Your Message</label>
-            <textarea name="message" class="input" id="" cols="30" rows="10" placeholder="Enter your message here."></textarea>
+            <textarea name="message" class="input" id="" cols="30" rows="10" placeholder="Enter your message here." required></textarea>
         </div>
 
         <div class="input-container">
